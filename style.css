@@ -2,38 +2,40 @@ body {
     font-family: 'Merriweather', serif;
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
+    background-color: whitesmoke;
     color: #1a1818;
 }
 
 header {
-    font-size: 28px; /* Adjust size as needed */
+    font-size: 20px; /* Adjust size as needed */
     font-weight: lighter;
     text-align: center;
     background-color: #2e3134;
     color: white;
-    padding: 80px;
+    padding: 15px;
 }
 
 h2 {
-    font-size: 36px; /* Adjust as needed */
+    font-size: 25px; /* Adjust as needed */
     font-weight: lighter;
 }
 
 nav {
     text-align: center;
     background-color: #2e3134;
-    padding: 15px;
+    padding: 5px;
 }
 
 nav ul {
+    font-size: 30px;
     list-style-type: none;
-    padding: 0;
+    padding: 70px;
 }
 
 nav ul li {
+    font-size: 25px;
     display: inline;
-    margin: 0 20px;
+    margin: 0 10px;
 }
 
 nav ul li a {
@@ -42,12 +44,16 @@ nav ul li a {
     font-weight: normal;
 }
 
+nav ul li a.active {
+    font-weight: lighter;
+}
+
 main {
     width: 80%;
     margin: 20px auto;
     padding: 20px;
-    background: white;
-    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+    background: whitesmoke;
+    box-shadow: 0px 0px 10px whitesmoke;
 }
 
 .about-container {
@@ -74,6 +80,116 @@ section {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #ffffff;
+    background-color: whitesmoke;
     color: rgb(93, 52, 52);
+}
+
+/* For the publications page */
+
+.publications-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Space between tiles */
+    margin-top: 20px;
+}
+
+.publication-tile {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.publication-tile h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.publication-tile p {
+    font-size: 16px;
+}
+
+.publication-tile a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #ffcc00;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.publication-tile a:hover {
+    background-color: #e6b800;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .publications-container {
+        flex-direction: column;
+    }
+}
+
+/* For the Resume page */
+.resume-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.resume-container iframe {
+    border: none;
+}
+
+.resume-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.resume-link:hover {
+    background-color: #e6b800;
+}
+
+/* For the Projects page */
+.projects-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.project-tile {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #ffcc00;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.project-link:hover {
+    background-color: #e6b800;
 }
